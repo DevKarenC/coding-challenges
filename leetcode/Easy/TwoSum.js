@@ -27,3 +27,27 @@ var twoSum = function (nums, target) {
     }
   }
 };
+
+// Optimal solution with better time complexity
+var twoSum = function (nums, target) {
+  // while looping through the nums array, create a map that stores the number and its index at the nums array
+  // for example:
+  /*
+  map = {
+      "2": 0,
+      "7": 1,
+      "11": 2,
+      "15": 3
+  }
+  */
+  const map = {};
+  for (let i = 0; i < nums.length; i++) {
+    const number = nums[i];
+    const counterpart = target - nums[i];
+    // check to see if the subtraction counterpart exists inside of the map
+    // if yes, then return the value of that counterpart in the map and the current index of the loop
+    if (counterpart in map) return [map[counterpart], i];
+    // if no, then insert the key-value pair into the map
+    map[number] = i;
+  }
+};
