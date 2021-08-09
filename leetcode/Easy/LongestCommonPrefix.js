@@ -18,7 +18,7 @@ var longestCommonPrefix = function (strs) {
     for (let j = 0; j < strs.length; j++) {
       const word = strs[j];
       // if the characters at the same index do not match,
-      // it's not common anymore, so there is no need to loop anymore
+      // it's not common, so there is no need to loop anymore
       // simply return up until the characters were common
       if (char !== word[i]) return firstWord.slice(0, i);
     }

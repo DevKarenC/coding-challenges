@@ -2,9 +2,10 @@
 
 ## Easy
 
-1. [Reverse Integer](./Easy/ReverseInteger.js)
-2. [Palindrome Number](./Easy/PalindromeNumber.js)
-3. [Roman Numeral](./Easy/RomanToInteger.js)
-4. [Longest Common Prefix](./Easy/LongestCommonPrefix.js)
-5. [Valid Parentheses]()
-6. [Merge Two Sorted Lists]()
+1. [Two Sum](./Easy/TwoSum.js)
+2. [Reverse Integer](./Easy/ReverseInteger.js)
+3. [Palindrome Number](./Easy/PalindromeNumber.js)
+4. [Roman Numeral](./Easy/RomanToInteger.js)
+5. [Longest Common Prefix](./Easy/LongestCommonPrefix.js)
+6. [Valid Parentheses]()
+7. [Merge Two Sorted Lists]()
