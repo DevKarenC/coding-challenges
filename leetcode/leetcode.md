@@ -11,4 +11,4 @@
 7. [Merge Two Sorted Lists]()
 8. [Happy Number](./Easy/HappyNumber.js)
 9. [Remove Duplicates from Sorted Array]()
-10. [Remove Element]()
+10. [Remove Element](./Easy/RemoveElement.js)
