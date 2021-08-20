@@ -10,5 +10,6 @@
 6. [Valid Parentheses](./Easy/ValidParentheses.js)
 7. [Merge Two Sorted Lists]()
 8. [Happy Number](./Easy/HappyNumber.js)
-9. [Remove Duplicates from Sorted Array]()
+9. [Remove Duplicates from Sorted Array](./Easy/RemoveDuplicatesFromSortedArray.js)
 10. [Remove Element](./Easy/RemoveElement.js)
+11. [First Unique Character in a String](./Easy/FirstUniqueCharacterString.js)
