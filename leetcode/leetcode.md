@@ -8,7 +8,7 @@
 4. [Roman Numeral](./Easy/RomanToInteger.js)
 5. [Longest Common Prefix](./Easy/LongestCommonPrefix.js)
 6. [Valid Parentheses](./Easy/ValidParentheses.js)
-7. [Merge Two Sorted Lists]()
+7. [Merge Two Sorted Lists](./Easy/MergeTwoSortedLists.js)
 8. [Happy Number](./Easy/HappyNumber.js)
 9. [Remove Duplicates from Sorted Array](./Easy/RemoveDuplicatesFromSortedArray.js)
 10. [Remove Element](./Easy/RemoveElement.js)
