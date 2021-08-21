@@ -51,3 +51,20 @@ var mergeTwoLists = function (l1, l2) {
 
   return newHead;
 };
+
+// recursive solution
+var mergeTwoListsRecursive = function (l1, l2) {
+  // base case: if either l1 or l2 is null, return the other non-null node
+  if (!l1 || !l2) return l1 ? l1 : l2;
+  // recursive case:
+  // compare l1 and l2 values to determine which has a smaller head,
+  if (l1.val <= l2.val) {
+    l1.next = mergeTwoListsRecursive(l1.next, l2);
+    return l1;
+  }
+  // set the next value for that head to the next merge result
+  else {
+    l2.next = mergeTwoListsRecursive(l1, l2.next);
+    return l2;
+  }
+};
