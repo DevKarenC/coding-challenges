@@ -13,3 +13,4 @@
 9. [Remove Duplicates from Sorted Array](./Easy/RemoveDuplicatesFromSortedArray.js)
 10. [Remove Element](./Easy/RemoveElement.js)
 11. [First Unique Character in a String](./Easy/FirstUniqueCharacterString.js)
+12. [Reverse Linked List](./Easy/ReverseLinkedList.js)

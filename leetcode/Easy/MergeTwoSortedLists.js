@@ -59,11 +59,11 @@ var mergeTwoListsRecursive = function (l1, l2) {
   // recursive case:
   // compare l1 and l2 values to determine which has a smaller head,
   if (l1.val <= l2.val) {
+    // set the next value for that head to the next merge result
     l1.next = mergeTwoListsRecursive(l1.next, l2);
+    // return the smaller head
     return l1;
-  }
-  // set the next value for that head to the next merge result
-  else {
+  } else {
     l2.next = mergeTwoListsRecursive(l1, l2.next);
     return l2;
   }
