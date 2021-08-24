@@ -14,3 +14,5 @@
 10. [Remove Element](./Easy/RemoveElement.js)
 11. [First Unique Character in a String](./Easy/FirstUniqueCharacterString.js)
 12. [Reverse Linked List](./Easy/ReverseLinkedList.js)
+13. [Search Insert Position](./Easy/SearchInsertPosition.js)
+14. [Maximum Subarray](./Easy/MaximumSubarray.js)
