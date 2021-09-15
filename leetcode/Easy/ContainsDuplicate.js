@@ -36,3 +36,10 @@ var containsDuplicate = function (nums) {
   }
   return false;
 };
+
+// Approach #3 (Set): Time - O(n), Space: O(n)
+var containsDuplicate = function (nums) {
+  // create a set with nums array
+  // if the length is different, that means there was a duplicate so return true
+  return nums.length !== new Set(nums).size ? true : false;
+};
