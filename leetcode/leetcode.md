@@ -17,3 +17,4 @@
 13. [Search Insert Position](./Easy/SearchInsertPosition.js)
 14. [Maximum Subarray](./Easy/MaximumSubarray.js)
 15. [Contains Duplicate](./Easy/ContainsDuplicate.js)
+16. [Climbing Stairs](./Easy/ClimbingStairs.js)
