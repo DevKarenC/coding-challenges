@@ -6,7 +6,7 @@ Given an integer array nums, return true if any value appears at least twice in 
 https://leetcode.com/problems/contains-duplicate/
 */
 
-// Approach #1: Time - O(n), Space - O(n)
+// Approach #1 (Hash map): Time - O(n), Space - O(n)
 var containsDuplicate = function (nums) {
   const appeared = {};
   // populate the appeared hash map
@@ -19,6 +19,20 @@ var containsDuplicate = function (nums) {
   // iterate through the hash map to check if any value appears at least twice
   for (const num in appeared) {
     if (appeared[num] >= 2) return true;
+  }
+  return false;
+};
+
+// Approach #2 (Sorted array): Time - O(n log n), Space: O(1)
+var containsDuplicate = function (nums) {
+  // sort the nums array
+  nums.sort((a, b) => a - b);
+  let j = 1;
+  for (let i = 0; i < nums.length - 1; i++) {
+    // if i and j are the same, return true
+    if (nums[i] === nums[j]) return true;
+    // move up j
+    j++;
   }
   return false;
 };
