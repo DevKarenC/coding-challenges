@@ -22,3 +22,17 @@ var climbStairs = function (n) {
   }
   return memo[n];
 };
+
+// Approach #2 (Dynamic Programming Bottom Up, Space optimized): Time - O(n), Space - O(1)
+var climbStairs = function (n) {
+  let prev = 0;
+  let cur = 1;
+  let temp;
+
+  for (let i = 1; i <= n; i++) {
+    temp = prev;
+    prev = cur;
+    cur += temp;
+  }
+  return cur;
+};
