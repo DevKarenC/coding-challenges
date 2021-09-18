@@ -20,8 +20,8 @@
 16. [Climbing Stairs](./Easy/ClimbingStairs.js)
 17. [Best Time to Buy and Sell Stock](./Easy/BestTimeToBuyAndSellStock.js)
 18. [Valid Anagram](./Easy/ValidAnagram.js)
-19. []()
 
 ## Medium
 
 1. [Product of Array Except Self](./Medium/ProductOfArrayExceptSelf.js)
+2. [Merge Intervals](./Medium/MergeIntervals.js)
