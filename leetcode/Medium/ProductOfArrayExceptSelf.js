@@ -37,3 +37,22 @@ var productExceptSelf = function (nums) {
   }
   return output;
 };
+
+// Approach #2: Time - O(n), Space - O(1) where the output array does not count as extra space
+// Very similar to Approach #1, except we do all the operations in the output array
+var productExceptSelf = function (nums) {
+  // Initialize the empty answer array where for a given index i, answer[i] would contain the product of all the numbers to the left of i.
+  const output = [1];
+  let right = 1;
+  // populate the output array with "left" numbers
+  for (let i = 1; i < nums.length; i++) {
+    output.push(output[i - 1] * nums[i - 1]);
+  }
+  // now that the output array has "left" numbers,
+  // populate the output array with product except self using "right" numbers
+  for (let i = nums.length - 1; i >= 0; i--) {
+    output[i] *= right;
+    right *= nums[i];
+  }
+  return output;
+};
