@@ -27,3 +27,4 @@
 2. [Merge Intervals](./Medium/MergeIntervals.js)
 3. [3 Sum](./Medium/3Sum.js)
 4. [Group Anagrams](./Medium/GroupAnagrams.js)
+5. [Maximum Product Subarray](./Medium/MaximumProductSubarray.js)
