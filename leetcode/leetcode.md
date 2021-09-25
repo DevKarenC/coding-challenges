@@ -28,3 +28,4 @@
 3. [3 Sum](./Medium/3Sum.js)
 4. [Group Anagrams](./Medium/GroupAnagrams.js)
 5. [Maximum Product Subarray](./Medium/MaximumProductSubarray.js)
+6. [Search in Rotated Sorted Array](./Medium/SearchInRotatedSortedArray.js)
