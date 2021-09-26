@@ -6,7 +6,7 @@ Given the head of a singly linked list, reverse the list, and return the reverse
 https://leetcode.com/problems/reverse-linked-list/
 */
 
-// Solution with comments
+// Solution with comments (8/21/2021)
 
 /*
  * Definition for singly-linked list.
@@ -34,4 +34,23 @@ var reverseList = function (head) {
   }
 
   return prevNode;
+};
+
+// Refresher (9/26/2021)
+var reverseList = function (head) {
+  // edge case: empty singly linked list
+  if (!head) return null;
+  // initialize pointers
+  let cur = head;
+  let prev = null;
+  let next = cur.next;
+  while (cur) {
+    // reverse the next pointer
+    cur.next = prev;
+    // update pointers
+    prev = cur;
+    cur = next;
+    if (next) next = next.next;
+  }
+  return prev;
 };
