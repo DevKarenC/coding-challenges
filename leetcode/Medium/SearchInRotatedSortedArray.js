@@ -14,6 +14,7 @@ https://leetcode.com/problems/search-in-rotated-sorted-array/
 
 // Approach #1: Time - O(log n), Space - O(1)
 // Important to recognize that this will involve binary search due to the required time complexity of O(log n)
+// Intuition: when you divide the rotated array into two halves, using mid index, at least one of subarray should remain sorted ALWAYS.
 var search = function (nums, target) {
   // initialize left, right, and mid pointers
   let left = 0;
