@@ -10,9 +10,6 @@ Return true if there is a cycle in the linked list. Otherwise, return false.
 https://leetcode.com/problems/linked-list-cycle/
 */
 
-// Approach #1: Time - O(n), Space - O(n)
-// Utilizing Hash Set to keep track of visited nodes
-
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
@@ -26,6 +23,8 @@ https://leetcode.com/problems/linked-list-cycle/
  * @return {boolean}
  */
 
+// Approach #1: Time - O(n), Space - O(n)
+// Utilizing Hash Set to keep track of visited nodes
 var hasCycle = function (head) {
   if (!head) return false;
   const visited = new Set();
@@ -39,4 +38,20 @@ var hasCycle = function (head) {
     cur = cur.next;
   }
   return false;
+};
+
+// Approach #2: Time - O(n), Space - O(1)
+// Floyd's Cycle Finding Algorithm (slow and fast)
+var hasCycle = function (head) {
+  if (!head) return false;
+  let slow = head;
+  let fast = head.next;
+  while (slow !== fast) {
+    // if fast reaches the end and we didn't have a cycle, return false
+    if (fast === null || fast.next === null) return false;
+    // slow moves by 1 whereas fast moves by 2
+    slow = slow.next;
+    fast = fast.next.next;
+  }
+  return true;
 };
