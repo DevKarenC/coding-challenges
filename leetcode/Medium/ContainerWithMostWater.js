@@ -20,3 +20,22 @@ var maxArea = function (height) {
   }
   return max;
 };
+
+// Approach #2 (optimized with 2 pointers): Time - O(n), Space - O(1)
+var maxArea = function (height) {
+  let max = 0;
+  // initialize 2 pointers at extreme ends
+  let left = 0;
+  let right = height.length - 1;
+  while (left < right) {
+    // calculate the current area (height * width)
+    let currentArea = Math.min(height[left], height[right]) * (right - left);
+    // update the max area
+    max = Math.max(max, currentArea);
+    // update the left and right pointers
+    // we should update the pointer with smaller height since that will increase the chance of getting a bigger area
+    if (height[left] <= height[right]) left++;
+    else right--;
+  }
+  return max;
+};
