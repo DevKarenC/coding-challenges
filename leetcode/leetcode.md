@@ -20,6 +20,7 @@
 16. [Climbing Stairs](./Easy/ClimbingStairs.js)
 17. [Best Time to Buy and Sell Stock](./Easy/BestTimeToBuyAndSellStock.js)
 18. [Valid Anagram](./Easy/ValidAnagram.js)
+19. [Linked List Cycle](./Easy/LinkedListCycle.js)
 
 ## Medium
 
