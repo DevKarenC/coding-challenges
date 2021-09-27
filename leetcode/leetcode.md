@@ -30,3 +30,4 @@
 4. [Group Anagrams](./Medium/GroupAnagrams.js)
 5. [Maximum Product Subarray](./Medium/MaximumProductSubarray.js)
 6. [Search in Rotated Sorted Array](./Medium/SearchInRotatedSortedArray.js)
+7. [Container With Most Water](./Medium/ContainerWithMostWater.js)
