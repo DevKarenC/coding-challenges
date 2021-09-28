@@ -31,3 +31,4 @@
 5. [Maximum Product Subarray](./Medium/MaximumProductSubarray.js)
 6. [Search in Rotated Sorted Array](./Medium/SearchInRotatedSortedArray.js)
 7. [Container With Most Water](./Medium/ContainerWithMostWater.js)
+8. [Find Minimum in Rotated Sorted Array](./Medium/FindMinimumInRotatedSortedArray.js)
